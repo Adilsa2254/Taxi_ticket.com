@@ -51,7 +51,7 @@ export default function DashboardClient() {
             <span className="font-semibold text-white tracking-tight">TaxiTicketing</span>
           </div>
           <div className="hidden md:flex items-center gap-6 text-sm text-neutral-400">
-            <a href="#" className="hover:text-neutral-100 transition-colors">Produk</a>
+            <a href="/produk" className="hover:text-neutral-100 transition-colors">Produk</a>
             <a href="#" className="hover:text-neutral-100 transition-colors">Pelanggan</a>
             <a href="#" className="hover:text-neutral-100 transition-colors">Harga</a>
           </div>
