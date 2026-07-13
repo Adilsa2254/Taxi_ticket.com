@@ -53,10 +53,13 @@ const getCurrentTimeStr = () => {
 };
 
 // Simulation functions
+let orderCounter = 4850;
+
 export const simulateOrderUpdate = (currentOrders: Order[]): Order[] => {
   const newOrderPossibility = Math.random();
   if (newOrderPossibility > 0.7) { // 30% chance of new order
-    const id = `TX-${Math.floor(4800 + Math.random() * 100)}`;
+    orderCounter++;
+    const id = `TX-${orderCounter}`;
     const customers = ["Dian Sastro", "Iko Uwais", "Chelsea Islan", "Reza Rahadian"];
     const routes = ["Sudirman → Blok M", "Kelapa Gading → Senayan", "PIK → Cengkareng", "Depok → Kuningan"];
     const newOrder: Order = {
