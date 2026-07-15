@@ -23,7 +23,7 @@ export default function ProductPage() {
           </Link>
           <div className="hidden md:flex items-center gap-6 text-sm text-neutral-400">
             <Link href="/produk" className="text-white font-medium transition-colors">Produk</Link>
-            <a href="#" className="hover:text-neutral-100 transition-colors">Pelanggan</a>
+            <Link href="/pelanggan" className="hover:text-neutral-100 transition-colors">Pelanggan</Link>
             <Link href="/harga" className="hover:text-neutral-100 transition-colors">Harga</Link>
           </div>
           <div className="flex items-center gap-4">

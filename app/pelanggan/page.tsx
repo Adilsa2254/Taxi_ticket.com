@@ -3,11 +3,11 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
-import PricingSection from '../../components/PricingSection';
+import CustomersSection from '../../components/CustomersSection';
 
 const Background3D = dynamic(() => import('../../components/Background3D'), { ssr: false });
 
-export default function PricingPage() {
+export default function CustomersPage() {
   return (
     <main className="relative min-h-screen bg-[#09090b] text-neutral-200 font-sans selection:bg-yellow-500/30">
       <Background3D />
@@ -23,8 +23,8 @@ export default function PricingPage() {
           </Link>
           <div className="hidden md:flex items-center gap-6 text-sm text-neutral-400">
             <Link href="/produk" className="hover:text-neutral-100 transition-colors">Produk</Link>
-            <Link href="/pelanggan" className="hover:text-neutral-100 transition-colors">Pelanggan</Link>
-            <Link href="/harga" className="text-white font-medium transition-colors">Harga</Link>
+            <Link href="/pelanggan" className="text-white font-medium transition-colors">Pelanggan</Link>
+            <Link href="/harga" className="hover:text-neutral-100 transition-colors">Harga</Link>
           </div>
           <div className="flex items-center gap-4">
             <Link href="/" className="text-sm font-medium bg-white text-black px-4 py-1.5 rounded-md hover:bg-neutral-200 transition-colors shadow-sm">
@@ -36,7 +36,7 @@ export default function PricingPage() {
 
       {/* Main Content */}
       <div className="relative z-10 max-w-6xl mx-auto px-6 py-12 md:py-20">
-         <PricingSection />
+         <CustomersSection />
       </div>
 
       {/* Footer */}
