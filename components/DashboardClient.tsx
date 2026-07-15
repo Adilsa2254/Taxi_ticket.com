@@ -55,6 +55,7 @@ export default function DashboardClient() {
             <Link href="/produk" className="hover:text-neutral-100 transition-colors">Produk</Link>
             <Link href="/pelanggan" className="hover:text-neutral-100 transition-colors">Pelanggan</Link>
             <Link href="/harga" className="hover:text-neutral-100 transition-colors">Harga</Link>
+            <Link href="/dokumentasi" className="hover:text-neutral-100 transition-colors">Dokumentasi</Link>
           </div>
           <div className="flex items-center gap-4">
             <button onClick={() => setIsLoginModalOpen(true)} className="text-sm font-medium text-neutral-300 hover:text-white transition-colors">
@@ -81,9 +82,9 @@ export default function DashboardClient() {
             <button onClick={() => setIsLoginModalOpen(true)} className="bg-white text-black px-5 py-2.5 rounded-md font-medium text-sm hover:bg-neutral-200 transition-colors flex items-center gap-2 shadow-sm">
               Mulai sekarang <ArrowRightIcon className="w-4 h-4" />
             </button>
-            <button className="bg-neutral-900 border border-white/[0.08] text-white px-5 py-2.5 rounded-md font-medium text-sm hover:bg-neutral-800 transition-colors">
+            <Link href="/dokumentasi" className="inline-block bg-neutral-900 border border-white/[0.08] text-white px-5 py-2.5 rounded-md font-medium text-sm hover:bg-neutral-800 transition-colors">
               Dokumentasi
-            </button>
+            </Link>
           </div>
         </div>
       </section>
