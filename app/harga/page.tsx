@@ -3,11 +3,11 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
-import ProductSection from '../../components/ProductSection';
+import PricingSection from '../../components/PricingSection';
 
 const Background3D = dynamic(() => import('../../components/Background3D'), { ssr: false });
 
-export default function ProductPage() {
+export default function PricingPage() {
   return (
     <main className="relative min-h-screen bg-[#09090b] text-neutral-200 font-sans selection:bg-yellow-500/30">
       <Background3D />
@@ -22,9 +22,9 @@ export default function ProductPage() {
             <span className="font-semibold text-white tracking-tight">TaxiTicketing</span>
           </Link>
           <div className="hidden md:flex items-center gap-6 text-sm text-neutral-400">
-            <Link href="/produk" className="text-white font-medium transition-colors">Produk</Link>
+            <Link href="/produk" className="hover:text-neutral-100 transition-colors">Produk</Link>
             <a href="#" className="hover:text-neutral-100 transition-colors">Pelanggan</a>
-            <Link href="/harga" className="hover:text-neutral-100 transition-colors">Harga</Link>
+            <Link href="/harga" className="text-white font-medium transition-colors">Harga</Link>
           </div>
           <div className="flex items-center gap-4">
             <Link href="/" className="text-sm font-medium bg-white text-black px-4 py-1.5 rounded-md hover:bg-neutral-200 transition-colors shadow-sm">
@@ -34,15 +34,9 @@ export default function ProductPage() {
         </div>
       </nav>
 
-      {/* Main Content - No generic headings, just professional layout */}
+      {/* Main Content */}
       <div className="relative z-10 max-w-6xl mx-auto px-6 py-12 md:py-20">
-         {/* A subtle tab-like header for context, very SaaS-like */}
-         <div className="mb-12 border-b border-white/[0.08] pb-6 flex items-center justify-between">
-           <h1 className="text-2xl font-medium text-white tracking-tight">Capabilities & Features</h1>
-           <span className="text-sm font-mono text-neutral-500">v2.4.0</span>
-         </div>
-         
-         <ProductSection />
+         <PricingSection />
       </div>
 
       {/* Footer */}
