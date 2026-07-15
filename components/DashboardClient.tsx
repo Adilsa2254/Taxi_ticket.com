@@ -56,6 +56,7 @@ export default function DashboardClient() {
             <Link href="/pelanggan" className="hover:text-neutral-100 transition-colors">Pelanggan</Link>
             <Link href="/harga" className="hover:text-neutral-100 transition-colors">Harga</Link>
             <Link href="/dokumentasi" className="hover:text-neutral-100 transition-colors">Dokumentasi</Link>
+            <Link href="/about" className="hover:text-neutral-100 transition-colors">Tentang</Link>
           </div>
           <div className="flex items-center gap-4">
             <button onClick={() => setIsLoginModalOpen(true)} className="text-sm font-medium text-neutral-300 hover:text-white transition-colors">
